@@ -1,0 +1,40 @@
+.tecnologiascard {
+  @media (max-width: 425px) {
+
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 2rem 1.2rem;
+    padding-top: 1rem;
+    
+    
+
+
+   }
+    margin: 0 auto;
+    padding-top: 4rem;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 10% 30%; 
+    grid-template-areas: 
+      ". . . ."
+      ". . . ."
+      ". . . ."; 
+    justify-content: space-around; 
+    
+    width: 30%; 
+  
+  .caja {
+    display: flex;
+    flex-direction: column;
+    p {
+      color: whitesmoke;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    img {
+      width: 6rem;
+    }
+  }
+}

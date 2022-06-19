@@ -1,0 +1,54 @@
+.hero {
+  @media (max-width: 425px) {
+
+    grid-auto-flow: column;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+
+
+   }
+  display: grid;
+  grid-template-columns: 1fr 1fr 0fr;
+  grid-template-rows: 1fr 1fr 0fr;
+  gap: 0px 0px;
+  justify-content: space-evenly;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+  width: 90;
+  margin-top: 5%;
+  
+  .imagen {
+    display: flex;
+    justify-content: center;
+    img {
+      margin: 20px;
+      border-radius: 20px;
+      width: 60%;
+      object-fit: cover;
+    }
+  }
+
+  .card {
+    padding-top: 1rem;
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 12px;
+    .job {
+      padding: 20px;
+      font-size: 3rem;
+    }
+    .git{
+      img{
+        width: 20%;
+      }
+    }
+    .Link{
+      img{
+        width: 20%;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.mi {
+  @media (max-width: 425px) {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "."
+      "."
+      "."
+      ".";
+    justify-content: space-evenly;
+    width: 30%;
+  }
+  padding-top: 2%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5% 5%;
+  grid-template-areas:
+    ". ."
+    ". .";
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+  iframe {
+    @media (max-width: 425px) {
+      width: 23rem;
+    }
+    width: 25rem;
+    height: 20rem;
+    border: none;
+  }
+}
