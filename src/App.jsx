@@ -18,7 +18,7 @@ function App() {
           Inicio
         </button>
         <button className='bt1' onClick={() => setShowHero("2")}>
-         Tecnologias
+         Tools
         </button>
         <button className='bt1' onClick={() => setShowHero("3")}>
          Proyectos
